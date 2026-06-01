@@ -1,0 +1,10 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Documents/General.uss?fileID=7433441132597879392&amp;guid=57173cff62e50bf429db2e365b6a0c2e&amp;type=3#General" />
+    <ui:Button name="button" class="inventory-slot-label" style="height: 60px; background-color: rgb(82, 82, 82); width: 60px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+        <ui:VisualElement name="icon" style="position: absolute; top: 4px; left: 6px; bottom: 4px; right: 6px; -unity-background-scale-mode: stretch-to-fill; align-items: auto; align-self: auto; align-content: auto;">
+            <Bindings>
+                <ui:DataBinding property="style.backgroundImage" data-source-path="icon" data-source-type="InventoryItem, Assembly-CSharp" binding-mode="ToTargetOnce" />
+            </Bindings>
+        </ui:VisualElement>
+    </ui:Button>
+</ui:UXML>
