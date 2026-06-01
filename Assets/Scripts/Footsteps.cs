@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Footsteps : MonoBehaviour
 {
-    public AudioClip stepSound;
+    public AudioClip Sound;
     public float stepVolume = 0.5f;
     public float stepDistance = 2f;
 
@@ -20,14 +20,12 @@ public class Footsteps : MonoBehaviour
 
     public void Update()
     {
-        // Считаем пройденное расстояние
         distanceTraveled += Vector3.Distance(transform.position, lastPosition);
         lastPosition = transform.position;
 
-        // Если прошли нужное расстояние - звук шага
         if (distanceTraveled >= stepDistance && controller.velocity.magnitude > 0.1f)
         {
-            audioSource.PlayOneShot(stepSound, stepVolume);
+            audioSource.PlayOneShot(Sound, stepVolume);
             distanceTraveled = 0f;
         }
     }

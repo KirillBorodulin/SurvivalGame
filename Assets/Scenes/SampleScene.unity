@@ -1067,8 +1067,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e19a1d704b9ae864fa1dbcc72cbf43da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Footsteps
-  stepSound: {fileID: 8300000, guid: bfdbfa4742eefb845a93725a162cc208, type: 3}
-  stepVolume: 0.5
+  Sound: {fileID: 0}
+  stepVolume: 2
   stepDistance: 2
 --- !u!1001 &1364380041810044814
 PrefabInstance:
