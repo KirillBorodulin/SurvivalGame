@@ -952,6 +952,7 @@ GameObject:
   - component: {fileID: 2108904122}
   - component: {fileID: 2108904125}
   - component: {fileID: 2108904126}
+  - component: {fileID: 2108904127}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1054,6 +1055,21 @@ MonoBehaviour:
   loadAction: {fileID: -8643748575521437526, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   player: {fileID: 2108904124}
   inventory: {fileID: 2108904125}
+--- !u!114 &2108904127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108904121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19a1d704b9ae864fa1dbcc72cbf43da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Footsteps
+  stepSound: {fileID: 8300000, guid: bfdbfa4742eefb845a93725a162cc208, type: 3}
+  stepVolume: 0.5
+  stepDistance: 2
 --- !u!1001 &1364380041810044814
 PrefabInstance:
   m_ObjectHideFlags: 0
