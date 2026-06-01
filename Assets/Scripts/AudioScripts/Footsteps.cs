@@ -2,9 +2,12 @@ using UnityEngine;
 
 public class Footsteps : MonoBehaviour
 {
-    public AudioClip Sound;
-    public float stepVolume = 0.5f;
-    public float stepDistance = 2f;
+    [SerializeField]
+    private AudioClip Sound;
+    [SerializeField]
+    private float stepVolume = 0.5f;
+    [SerializeField]
+    private float stepDistance = 2f;
 
     private AudioSource audioSource;
     private CharacterController controller;
