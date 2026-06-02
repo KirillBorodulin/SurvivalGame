@@ -13,6 +13,7 @@ public class RockSpawner : MonoBehaviour
 
     [SerializeField]
     private VisualEffect destroyEffect;
+    private float effectHeight = 1.5f;
 
     public void Interact()
     {
@@ -26,14 +27,17 @@ public class RockSpawner : MonoBehaviour
 
             if (itemsSpawned >= maxItems)
             {
-                if (destroyEffect != null)
+                if (itemsSpawned >= maxItems)
                 {
-                    VisualEffect effect = Instantiate(destroyEffect, transform.position, Quaternion.identity);
-                    effect.Play();
-                    Destroy(effect.gameObject, 2f);
+                    if (destroyEffect != null)
+                    {
+                        Vector3 effectPos = transform.position + Vector3.up * effectHeight;
+                        VisualEffect effect = Instantiate(destroyEffect, effectPos, Quaternion.identity);
+                        effect.Play();
+                        Destroy(effect.gameObject, 2f);
+                    }
+                    Destroy(gameObject, 0.5f);
                 }
-
-                Destroy(gameObject, 0.5f);
             }
         }
     }

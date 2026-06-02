@@ -13,6 +13,7 @@ public class TreeSpawner : MonoBehaviour
 
     [SerializeField]
     private VisualEffect destroyEffect;
+    private float effectHeight = 1.5f;
 
     public void Interact()
     {
@@ -26,9 +27,10 @@ public class TreeSpawner : MonoBehaviour
 
             if (itemsSpawned >= maxItems)
             {
-                if(destroyEffect != null)
+                if (destroyEffect != null)
                 {
-                    VisualEffect effect = Instantiate(destroyEffect, transform.position, Quaternion.identity);
+                    Vector3 effectPos = transform.position + Vector3.up * effectHeight;
+                    VisualEffect effect = Instantiate(destroyEffect, effectPos, Quaternion.identity);
                     effect.Play();
                     Destroy(effect.gameObject, 2f);
                 }
