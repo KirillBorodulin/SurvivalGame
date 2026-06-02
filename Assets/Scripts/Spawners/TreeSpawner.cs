@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class TreeSpawner : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class TreeSpawner : MonoBehaviour
     [SerializeField]
     private int maxItems = 5;
     private int itemsSpawned = 0;
+
+    [SerializeField]
+    private VisualEffect destroyEffect;
 
     public void Interact()
     {
@@ -22,6 +26,12 @@ public class TreeSpawner : MonoBehaviour
 
             if (itemsSpawned >= maxItems)
             {
+                if(destroyEffect != null)
+                {
+                    VisualEffect effect = Instantiate(destroyEffect, transform.position, Quaternion.identity);
+                    effect.Play();
+                    Destroy(effect.gameObject, 2f);
+                }
                 Destroy(gameObject, 0.5f);
             }
         }
