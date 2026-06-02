@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &76451530 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6283230160754145919, guid: 7200e498415d90d42bd7c164eb888833, type: 3}
+  m_PrefabInstance: {fileID: 7671126650501224397}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &321009155
 GameObject:
   m_ObjectHideFlags: 0
@@ -681,7 +686,6 @@ MonoBehaviour:
   settingsUXML: {fileID: 9197481963319205126, guid: 67f7a8bf92b7dd742bce15e54ea10993, type: 3}
   pauseAction: {fileID: -8003902658832584566, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   musicSource: {fileID: 1765639398}
-  inventoryDocument: {fileID: 611107956}
 --- !u!1 &536198919
 GameObject:
   m_ObjectHideFlags: 0
@@ -1324,6 +1328,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1556494257 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8336391967391597904, guid: 7c52d2a4122a4eb4a94d725ac67d58af, type: 3}
+  m_PrefabInstance: {fileID: 5009494779763072547}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1765639395
 GameObject:
   m_ObjectHideFlags: 0
@@ -1499,6 +1508,7 @@ GameObject:
   - component: {fileID: 2108904126}
   - component: {fileID: 2108904127}
   - component: {fileID: 2108904128}
+  - component: {fileID: 2108904129}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1631,6 +1641,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WalkEffect
   effect: {fileID: 837854494}
   moveAction: {fileID: -1680190386980627800, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+--- !u!114 &2108904129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108904121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c177241981cfdaa4eb89bc3d2d573faf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Building
+  placeAction: {fileID: 8595643775313347672, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  rotateAction: {fileID: 7020496569005051280, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  nextBuildingAction: {fileID: -8301138536842811425, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  prevBuildingAction: {fileID: -2145033303062691081, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  placeDistance: 3
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 1
+  buildings:
+  - {fileID: 1556494257}
+  - {fileID: 76451530}
 --- !u!1001 &1364380041810044814
 PrefabInstance:
   m_ObjectHideFlags: 0
