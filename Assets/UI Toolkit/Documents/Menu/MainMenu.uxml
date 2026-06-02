@@ -1,0 +1,7 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="menu" style="flex-grow: 1; flex-direction: column-reverse; align-items: center; justify-content: center; align-self: auto; background-image: url(&quot;project://database/Assets/Texture/Menu.jpg?fileID=2800000&amp;guid=ea071b05ee2f5b34980250004c58e15f&amp;type=3#Menu&quot;);">
+        <ui:Button text="Выйти" name="buttonExit" style="background-color: rgb(100, 242, 154); border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px;" />
+        <ui:Button text="Найстройки" name="buttonSettings" style="background-color: rgb(100, 242, 154); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;" />
+        <ui:Button text="Играть" name="buttonPlay" style="background-color: rgb(100, 242, 153); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;" />
+    </ui:VisualElement>
+</ui:UXML>
