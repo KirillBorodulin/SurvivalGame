@@ -134,7 +134,13 @@ public class Building : MonoBehaviour
 
         if (Physics.Raycast(ray, out RaycastHit hit, placeDistance, groundLayer))
         {
-            preview.transform.position = hit.point;
+            float objectHeight = 0.5f;
+            Renderer rend = preview.GetComponent<Renderer>();
+            if (rend != null)
+            {
+                objectHeight = rend.bounds.size.y / 2f;
+            }
+            preview.transform.position = hit.point + Vector3.up * objectHeight;
         }
     }
 
